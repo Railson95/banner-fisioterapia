@@ -2,207 +2,155 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Página oficial do evento de saúde.">
   <title>Evento de Saúde | Página Oficial</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="header">
-    <div class="container nav">
-      <a href="#" class="brand">
+<header class="site-header">
+  <nav class="navbar bg-white border-bottom">
+    <div class="container py-2">
+      <a href="#" class="navbar-brand d-flex align-items-center gap-2">
         <span class="brand-mark">+</span>
         <span>
-          <strong>EVENTO DE SAÚDE</strong>
-          <small>Saúde • Cuidado • Comunidade</small>
+          <strong class="brand-title d-block">EVENTO DE SAÚDE</strong>
+          <small class="text-secondary">Saúde • Cuidado • Comunidade</small>
         </span>
       </a>
-
-      <!--<a href="#links" class="nav-button">Acessar informações</a> -->
+      <!-- <a href="#links" class="btn btn-outline-primary rounded-pill px-4">Informações</a> -->
     </div>
-  </header>
+  </nav>
+</header>
 
-  <main>
-    <!-- BANNER PRINCIPAL
-         Troque o caminho abaixo pela URL da sua imagem.
-         Exemplo: https://seusite.com/banner.jpg
-         ou: imagens/banner.jpg
-    -->
-    <section class="hero">
-      <!-- <div class="hero-image"
-           style="background-image: url('https://placehold.co/1600x700/eaf7f5/087f73?text=COLOQUE+SEU+BANNER+AQUI');">
-      </div> -->
-
-      <div class="hero-overlay">
-        <div class="container hero-content">
-          <span class="eyebrow">EVENTO MUNICIPAL</span>
-          <h1>3ª Feira da Saúde:<br><span>de Candeias - MG</span></h1>
-          <p>Cuidando da Saúde promovendo qualidade de vida para toda a população.</p>
-          <a href="#links" class="primary-button">Confira os detalhes ↓</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="event-info">
-      <div class="container info-grid">
-        <div class="info-card">
-          <span class="icon">📅</span>
-          <div>
-            <small>DATA</small>
-            <strong>06 de Setembro de 2026 (Domingo) </strong>
-          </div>
-        </div>
-
-        <div class="info-card">
-          <span class="icon">⏰</span>
-          <div>
-            <small>HORÁRIO</small>
-            <strong>07h às 12h</strong>
-          </div>
-        </div>
-
-        <div class="info-card">
-          <span class="icon">📍</span>
-          <div>
-            <small>LOCAL</small>
-            <strong>Praça Monsenhor Castro</strong>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="links">
+<main>
+  <section class="hero">
+    <!-- TROQUE ESTA URL PELO SEU BANNER -->
+    <!-- <div class="hero-background" style="background-image:url('https://placehold.co/1920x800/eaf7f5/087f73?text=COLOQUE+SEU+BANNER+AQUI');"></div> -->
+    <div class="hero-overlay">
       <div class="container">
-        <div class="section-heading">
-          <span class="section-label">INFORMAÇÕES</span>
-          <!-- <h2>Informações sobre as UBS</h2>
-          <p>Encontre rapidamente inscrições, programação, materiais e outras informações importantes.</p> -->
-        </div>
-
-        <div class="cards">
-
-          <!-- DUPLIQUE OU REMOVA CARDS CONFORME NECESSÁRIO -->
-
-          <!-- <a class="link-card featured"
-             href="https://exemplo.com/inscricao"
-             target="_blank" rel="noopener noreferrer">
-            <div class="card-icon">📝</div>
-            <div class="card-text">
-              <span>UBS</span>
-              <h3>Inscrições</h3>
-              <p>Faça sua inscrição para participar do evento.</p>
-            </div>
-            <span class="arrow">→</span>
-          </a> -->
-
-          <!-- <a class="link-card"
-             href="https://exemplo.com/programacao"
-             target="_blank" rel="noopener noreferrer">
-            <div class="card-icon">📋</div>
-            <div class="card-text">
-              <span>PROGRAMAÇÃO</span>
-              <h3>Confira a programação</h3>
-              <p>Veja palestras, horários e atividades.</p>
-            </div>
-            <span class="arrow">→</span>
-          </a> -->
-
-          <!-- <a class="link-card"
-             href="https://exemplo.com/material"
-             target="_blank" rel="noopener noreferrer">
-            <div class="card-icon">📚</div>
-            <div class="card-text">
-              <span>MATERIAIS</span>
-              <h3>Materiais do evento</h3>
-              <p>Acesse apresentações, documentos e conteúdos.</p>
-            </div>
-            <span class="arrow">→</span>
-          </a> -->
-
-          <a class="link-card"
-             href="https://maps.app.goo.gl/tGFn5EjiR2yBnd9q7"
-             target="_blank" rel="noopener noreferrer">
-            <div class="card-icon">📍</div>
-            <div class="card-text">
-              <span>LOCALIZAÇÃO</span>
-              <h3>Como chegar</h3>
-              <p>Veja a localização e encontre o melhor caminho.</p>
-            </div>
-            <span class="arrow">→</span>
-          </a>
-
+        <div class="row align-items-center hero-row">
+          <div class="col-lg-8 col-xl-7 py-5">
+            <span class="eyebrow">EVENTO MUNICIPAL</span>
+            <h1 class="display-2 fw-bold text-white">3ª Feira da Saúde:<span>de Candeias - MG</span></h1>
+            <p class="lead text-white mt-4 mb-4">Cuidando da Saúde promovendo qualidade de vida para toda a população.</p>
+            <a href="#links" class="btn btn-light btn-lg rounded-pill px-4">Confira os detalhes <i class="bi bi-arrow-down ms-2"></i></a>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ÁREA PARA OUTROS BANNERS -->
-    <section class="banners-section">
-      <div class="container">
-        <div class="section-heading compact">
-          <span class="section-label">DESTAQUES</span>
-          <h2>Confira nossos materiais</h2>
+  <section class="event-info">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-12 col-md-4"><div class="info-card h-100"><div class="info-icon"><i class="bi bi-calendar-event"></i></div><div><small>DATA</small><strong>06 de Setembro de 2026 (Domingo)</strong></div></div></div>
+        <div class="col-12 col-md-4"><div class="info-card h-100"><div class="info-icon"><i class="bi bi-clock"></i></div><div><small>HORÁRIO</small><strong>07h às 12h</strong></div></div></div>
+        <div class="col-12 col-md-4"><div class="info-card h-100"><div class="info-icon"><i class="bi bi-geo-alt"></i></div><div><small>LOCAL</small><strong>Praça Monsenhor Castro</strong></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="links" class="section-padding">
+    <div class="container">
+      <div class="section-heading mb-5">
+        <span class="section-label">INFORMAÇÕES</span>
+        <!-- <h2>Acesse os conteúdos do evento</h2> -->
+        <!-- <p>Encontre rapidamente inscrições, programação, materiais e outras informações importantes.</p> -->
+      </div>
+
+      <!-- <div class="row g-4">
+        <div class="col-12 col-lg-6">
+          <a href="https://exemplo.com/inscricao" target="_blank" rel="noopener noreferrer" class="link-card featured h-100">
+            <div class="card-icon"><i class="bi bi-pencil-square"></i></div>
+            <div class="flex-grow-1"><span>PARTICIPE</span><h3>Inscrições</h3><p>Faça sua inscrição para participar do evento.</p></div>
+            <i class="bi bi-arrow-right arrow"></i>
+          </a>
         </div>
 
-        <div class="banner-grid">
-          <a href="https://railson95.github.io/banner-fisioterapia/alongamento.jpeg" target="_blank" rel="noopener noreferrer" class="banner">
-            <img src="https://placehold.co/1000x600/f1f8f7/087f73?text=Alongamentos em Casa"
-                 alt="Banner do evento">
+        <div class="col-12 col-lg-6">
+          <a href="https://exemplo.com/programacao" target="_blank" rel="noopener noreferrer" class="link-card h-100">
+            <div class="card-icon"><i class="bi bi-list-check"></i></div>
+            <div class="flex-grow-1"><span>PROGRAMAÇÃO</span><h3>Confira a programação</h3><p>Veja palestras, horários e atividades.</p></div>
+            <i class="bi bi-arrow-right arrow"></i>
           </a>
+        </div>
 
-          <a href="https://railson95.github.io/banner-fisioterapia/exercicios-casa.jpeg" target="_blank" rel="noopener noreferrer" class="banner">
-            <img src="https://placehold.co/1000x600/f1f8f7/087f73?text=Exercícios em Casa"
-                 alt="Banner do evento">
+        <div class="col-12 col-lg-6">
+          <a href="https://exemplo.com/material" target="_blank" rel="noopener noreferrer" class="link-card h-100">
+            <div class="card-icon"><i class="bi bi-file-earmark-text"></i></div>
+            <div class="flex-grow-1"><span>MATERIAIS</span><h3>Materiais do evento</h3><p>Acesse apresentações, documentos e conteúdos.</p></div>
+            <i class="bi bi-arrow-right arrow"></i>
           </a>
+        </div> -->
 
-          <a href="https://railson95.github.io/banner-fisioterapia/ergonomia-trabalho.jpeg" target="_blank" rel="noopener noreferrer" class="banner">
-            <img src="https://placehold.co/1000x600/f1f8f7/087f73?text=Ergonomia Trabalho"
-                 alt="Banner do evento">
+        <div class="col-12 col-lg-6">
+          <a href="https://maps.app.goo.gl/tGFn5EjiR2yBnd9q7" target="_blank" rel="noopener noreferrer" class="link-card h-100">
+            <div class="card-icon"><i class="bi bi-geo-alt"></i></div>
+            <div class="flex-grow-1"><span>LOCALIZAÇÃO</span><h3>Como chegar</h3><p>Veja a localização e encontre o melhor caminho.</p></div>
+            <i class="bi bi-arrow-right arrow"></i>
           </a>
-
-          <a href="https://railson95.github.io/banner-fisioterapia/banner-quedas.jpeg" target="_blank" rel="noopener noreferrer" class="banner">
-            <img src="https://placehold.co/1000x600/f1f8f7/087f73?text=Previna Quedas"
-                 alt="Banner do evento">
-          </a>
-
-          <a href="https://railson95.github.io/banner-fisioterapia/banner-info.jpeg" target="_blank" rel="noopener noreferrer" class="banner">
-            <img src="https://placehold.co/1000x600/f1f8f7/087f73?text=Informações, mitos e verdades"
-                 alt="Banner do evento">
-          </a>
-
-         
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="cta">
-      <div class="container cta-inner">
-        <div>
+  <section class="banners-section">
+    <div class="container">
+      <div class="section-heading mb-4">
+        <span class="section-label">DESTAQUES</span>
+        <h2>Confira nossos materiais</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4"><a href="https://railson95.github.io/banner-fisioterapia/alongamento.jpeg" target="_blank" class="banner"><img src="https://placehold.co/1200x720/f1f8f7/087f73?text=Alongamentos" alt="Banner do evento" class="img-fluid"></a></div>
+        <div class="col-12 col-md-6 col-lg-4"><a href="https://railson95.github.io/banner-fisioterapia/exercicios-casa.jpeg" target="_blank" class="banner"><img src="https://placehold.co/1200x720/eef5fa/17658c?text=Exercícios" alt="Banner informativo" class="img-fluid"></a></div>
+        <div class="col-12 col-md-6 col-lg-4"><a href="https://railson95.github.io/banner-fisioterapia/ergonomia-trabalho.jpeg" target="_blank" class="banner"><img src="https://placehold.co/1200x720/f8f3eb/9a6a24?text=Ergonomia Trabalho" alt="Banner de divulgação" class="img-fluid"></a></div>
+        <div class="col-12 col-md-6 col-lg-4"><a href="https://railson95.github.io/banner-fisioterapia/banner-quedas.jpeg" target="_blank" class="banner"><img src="https://placehold.co/1200x720/f8f3eb/9a6a24?text=Quedas" alt="Banner de divulgação" class="img-fluid"></a></div>
+        <div class="col-12 col-md-6 col-lg-4"><a href="https://railson95.github.io/banner-fisioterapia/banner-info.jpeg" target="_blank" class="banner"><img src="https://placehold.co/1200x720/f8f3eb/9a6a24?text=Informação" alt="Banner de divulgação" class="img-fluid"></a></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-8">
           <span class="section-label light">EVENTO DE SAÚDE</span>
           <h2>Informação, prevenção e cuidado.</h2>
           <p>Participe e compartilhe esta página com quem também precisa dessas informações.</p>
         </div>
+        <!-- <div class="col-lg-4 text-lg-end"><a href="#links" class="btn btn-light btn-lg rounded-pill px-4">Ver informações</a></div> -->
       </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-  <div class="container footer-inner">
-
-    <div>
-      <strong>SECRETARIA MUNICIPAL DE SAÚDE</strong>
-      <p>Candeias • Minas Gerais</p>
     </div>
+  </section>
+</main>
 
-    <div class="footer-logos">
-      <img src="logo-prefeitura.png" alt="Logo da Prefeitura">
-      <img src="logo-saude.png" alt="Logo da Secretaria de Saúde">
+<footer class="footer">
+  <div class="container">
+    <div class="row align-items-center gy-4">
+      <div class="col-12 col-lg-4 text-center text-lg-start">
+        <strong>SECRETARIA MUNICIPAL DE SAÚDE</strong>
+        <p>Candeias • Minas Gerais</p>
+      </div>
+
+      <!-- DUAS LOGOS LADO A LADO -->
+      <div class="col-12 col-lg-4">
+        <div class="footer-logos">
+          <img src="logo-prefeitura.png" alt="Logo da Prefeitura" class="footer-logo">
+          <img src="logo-saude.png" alt="Logo da Secretaria de Saúde" class="footer-logo">
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-4 text-center text-lg-end">
+        <p>© 2026 • Todos os direitos reservados</p>
+      </div>
     </div>
-
-    <p class="copyright">© 2026 • Todos os direitos reservados</p>
-
   </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
