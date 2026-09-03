@@ -82,3 +82,40 @@ body { font-family:'Inter',Arial,sans-serif; color:var(--text); background:var(-
   .footer-logos { gap:12px; }
   .footer-logo { width:105px; height:60px; }
 }
+
+.banner {
+  display: block;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: #fff;
+  box-shadow: 0 8px 25px rgba(18,65,60,.06);
+}
+
+.banner-image {
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  aspect-ratio: 5 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.banner-title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  padding: 20px;
+
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+
+  color: #fff;
+  background: rgba(0, 0, 0, 0.55);
+}
